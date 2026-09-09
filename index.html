@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doumdeli Maintenance et Nettoyage House - Hygiène Générale & Entretien</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#dc2626">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <header class="bg-slate-950/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[96px] py-4 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      <div class="flex items-center gap-4 w-full md:w-auto">
+        <div class="w-14 h-14 rounded-2xl bg-red-600 flex items-center justify-center text-white shadow-lg shadow-red-500/30 shrink-0">
+          <i class="fa-solid fa-broom text-3xl animate-pulse text-slate-100"></i>
+        </div>
+        <div>
+          <h1 class="text-lg md:text-2xl font-black text-white tracking-wide leading-tight">
+            Doumdeli <span class="text-red-500">Maintenance & Nettoyage</span>
+          </h1>
+          <p class="text-[10px] md:text-xs text-slate-400 font-bold tracking-wider uppercase mt-0.5">Hygiène Générale, Entretien & Services</p>
+        </div>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-6 font-semibold text-slate-300">
+        <a href="#hero" class="hover:text-red-400 transition">Accueil</a>
+        <a href="#services" class="hover:text-red-400 transition">Nos Services</a>
+        <a href="#lab-info" class="hover:text-red-400 transition">Nos Standards</a>
+        <a href="#ticket" class="hover:text-red-400 transition">Demander un Devis</a>
+      </nav>
+
+      <a href="#ticket" class="w-full md:w-auto text-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-red-500/20 transition flex items-center gap-2 shrink-0">
+        <i class="fa-solid fa-calendar-check"></i> Réservation & Devis Rapide
+      </a>
+    </div>
+  </header>
+
+  <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-left">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/60 border border-red-800 text-red-400 font-bold text-sm mb-6">
+          <i class="fa-solid fa-sparkles text-red-400"></i> Professionnalisme & Propreté Absolue
+        </span>
+        <h2 class="text-4xl md:text-5xl font-black text-white leading-tight mb-6">
+          La maintenance et l'entretien de vos espaces..<br>
+          <span class="bg-gradient-to-r from-red-500 via-gray-300 to-blue-500 bg-clip-text text-transparent">L'hygiène générale à votre portée</span>
+        </h2>
+        <p class="text-lg text-slate-400 font-medium leading-relaxed mb-8">
+          Spécialistes de la maintenance, du nettoyage house et de l'hygiène générale. Nous transformons vos domiciles et locaux professionnels en espaces impeccables grâce à des équipes qualifiées et des équipements de pointe.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-red-500/20 transition text-center flex-1 sm:flex-none">
+            Découvrir nos Prestations
+          </a>
+          <a href="#ticket" class="bg-slate-800 border-2 border-slate-700 hover:border-red-500 text-slate-200 font-bold px-8 py-4 rounded-2xl transition text-center flex-1 sm:flex-none">
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-tr from-red-600 via-gray-600 to-blue-600 rounded-3xl filter blur-3xl opacity-10 -z-10"></div>
+        <img id="hero-tech-img" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Nettoyage et Maintenance Professionnelle" class="w-full h-[450px] object-cover rounded-3xl shadow-2xl border-4 border-slate-800">
+      </div>
+    </div>
+  </section>
+
+  <main id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h3 class="text-3xl font-black text-white mb-4">Nos Domaines d'Intervention</h3>
+      <p class="text-slate-400 font-medium">Des solutions complètes adaptées à vos besoins en entretien résidentiel et commercial.</p>
+    </div>
+
+    <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Les services s'injecteront dynamiquement via app.js ou affichage direct -->
+      <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 shadow-xl hover:border-red-600 transition">
+        <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-500 flex items-center justify-center text-xl mb-4 font-bold">
+          <i class="fa-solid fa-house-chimney"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Nettoyage House</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">Entretien complet des résidences, dépoussiérage, lavage de vitres et désinfection des pièces à vivre.</p>
+      </div>
+
+      <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 shadow-xl hover:border-red-600 transition">
+        <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-500 flex items-center justify-center text-xl mb-4 font-bold">
+          <i class="fa-solid fa-soap"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Hygiène Générale</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">Désinfection, dératisation et traitement approfondi pour garantir des environnements sains et propres.</p>
+      </div>
+
+      <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 shadow-xl hover:border-red-600 transition">
+        <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-500 flex items-center justify-center text-xl mb-4 font-bold">
+          <i class="fa-solid fa-tools"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Maintenance & Entretien</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">Réparations courantes, suivi technique des installations et maintenance préventive des bâtiments.</p>
+      </div>
+    </div>
+  </main>
+
+  <section id="lab-info" class="bg-slate-950 text-white py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-left">
+        <span class="text-red-500 font-bold uppercase tracking-wider text-sm block mb-2">// Qualité & Rigueur</span>
+        <h3 class="text-3xl font-black mb-6">Pourquoi Choisir Doumdeli ?</h3>
+        <p class="text-slate-400 font-medium leading-relaxed mb-6">
+          Nous mettons un point d'honneur à offrir un service irréprochable. Nos équipes utilisent des produits écologiques et du matériel performant pour assurer la longévité de vos installations et la propreté absolue de vos espaces.
+        </p>
+        <div class="space-y-4 font-semibold text-slate-300 mb-8">
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-red-500"></i> Équipe professionnelle, ponctuelle et qualifiée.</div>
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-red-500"></i> Produits de nettoyage écologiques et respectueux de l'environnement.</div>
+          <div class="flex items-center gap-3"><i class="fa-solid fa-square-check text-red-500"></i> Devis transparents et interventions rapides adaptés à vos horaires.</div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 shadow-2xl relative space-y-5">
+        <h4 class="text-base font-bold text-slate-200 flex items-center gap-2">
+          <i class="fa-solid fa-shield-heart text-red-500 animate-pulse text-lg"></i>
+          Engagement Qualité & Hygiène
+        </h4>
+
+        <div class="w-full h-64 bg-slate-950 rounded-2xl overflow-hidden shadow-inner relative border border-slate-800 flex items-center justify-center text-center p-6">
+          <div>
+            <i class="fa-solid fa-handshake-angle text-5xl text-red-500 mb-4"></i>
+            <p class="text-slate-300 font-bold text-lg">Votre satisfaction est notre priorité absolue.</p>
+            <p class="text-slate-500 text-xs mt-2">Un service sur-mesure pour particuliers et entreprises.</p>
+          </div>
+        </div>
+
+        <p class="text-[11px] text-slate-500 font-medium italic text-right leading-normal pt-1 border-t border-slate-800/60">
+          * Doumdeli Maintenance et Nettoyage House – Votre partenaire de confiance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ticket" class="max-w-3xl mx-auto px-4 py-16 w-full">
+    <div class="bg-slate-950 rounded-3xl shadow-2xl p-8 md:p-10 border border-slate-800 text-left">
+      <div class="text-center mb-8">
+        <i class="fa-solid fa-file-pen text-4xl text-red-500 mb-3"></i>
+        <h3 class="text-2xl font-black text-white">Demande de Devis & Intervention</h3>
+        <p class="text-sm font-medium text-slate-400 mt-2">Remplissez le formulaire ci-dessous pour planifier une prestation de nettoyage ou de maintenance.</p>
+      </div>
+
+      <form id="tech-form" onsubmit="event.preventDefault(); alert('Votre demande a été envoyée avec succès ! Notre équipe vous contactera très rapidement pour confirmer les détails.');">
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Nom Complet / Entreprise</label>
+            <input type="text" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-red-500 transition shadow-inner" placeholder="Ex: Jean Dupont...">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Numéro WhatsApp / Téléphone</label>
+            <input type="tel" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-red-500 transition text-left shadow-inner" placeholder="Ex: +33 6... ou autre...">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Type de Service Souhaité</label>
+            <select id="device-select" class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 focus:outline-none focus:border-red-500 transition font-semibold shadow-inner">
+              <option>Nettoyage House (Résidentiel)</option>
+              <option>Hygiène Générale & Désinfection</option>
+              <option>Maintenance & Entretien Bâtiment</option>
+              <option>Nettoyage Bureaux & Locaux Commerciaux</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-slate-300 mb-2">Lieu / Ville de l'Intervention</label>
+            <input type="text" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-red-500 transition shadow-inner" placeholder="Ex: Ville, Quartier...">
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-sm font-bold text-slate-300 mb-2">Description des Besoins Particuliers</label>
+          <textarea rows="4" required class="w-full p-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white focus:outline-none focus:border-red-500 transition shadow-inner" placeholder="Précisez la surface, la fréquence ou les tâches spécifiques souhaitées..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-red-600 via-gray-600 to-blue-600 hover:opacity-95 text-white font-black py-4 rounded-2xl shadow-lg transition tracking-wide text-lg">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Envoyer la Demande
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 border-t border-slate-800 text-center py-8 mt-auto text-sm font-semibold text-slate-500">
+    <p>© 2026 Doumdeli Maintenance et Nettoyage House. Tous droits réservés - Hygiène générale et entretien de qualité.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
