@@ -1,0 +1,75 @@
+/* ==========================================================================
+   STYLE.CSS - DOUMDELI MAINTENANCE ET NETTOYAGE HOUSE
+   ========================================================================== */
+
+/* 1. تخصيص شريط التمرير ليتناسب مع الهوية البصرية */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* لون خلفية النوافذ slate-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* slate-800 */
+  border-radius: 20px;
+  border: 2px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626; /* الأحمر عند التمرير */
+  box-shadow: 0 0 10px #dc2626;
+}
+
+/* 2. تأثيرات إضاءة وتوهج النيون للأزرار والعناصر (Neon Glow Effects) */
+.shadow-neon-red {
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.2);
+}
+
+.shadow-neon-red:hover {
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.6), 0 0 5px rgba(100, 116, 139, 0.4);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 3. حركات أنيميشن مخصصة للأيقونات النابضة والخدمات */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 5px rgba(220, 38, 38, 0.4));
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(220, 38, 38, 0.8));
+  }
+}
+
+/* تطبيق الأنميشن على أيقونة الشعار الرئيسي أو الأزرار الهامة */
+.animate-tech-pulse {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+/* 4. تحسين مظهر حقول استمارة الحجز والفورم لتكون باهتمام بصري عالي */
+input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2), 0 0 10px rgba(220, 38, 38, 0.3);
+  border-color: #dc2626 !important;
+}
+
+/* 5. تجميل وتأثير الهوفير (Hover) على كروت الخدمات والـ Cards */
+.group:hover img {
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* 6. استجابة سريعة وسلسة لكافة التأثيرات الحركية في الموقع */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
