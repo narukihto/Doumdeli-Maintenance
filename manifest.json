@@ -1,0 +1,27 @@
+{
+  "short_name": "DoumdeliClean",
+  "name": "Doumdeli Maintenance & Nettoyage House",
+  "description": "Solutions professionnelles de nettoyage, hygiène générale, maintenance des bâtiments et services d'entretien pour domiciles et bureaux.",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["utilities", "lifestyle", "business"],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}
